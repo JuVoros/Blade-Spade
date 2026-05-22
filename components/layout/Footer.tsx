@@ -24,7 +24,7 @@ export default function Footer() {
             <p className="text-[10px] font-outfit font-light tracking-[0.18em] uppercase text-forest-300 mb-5">
               Landcare LLC
             </p>
-            <p className="text-sm text-cream-300/70 leading-relaxed max-w-[38ch]">
+            <p className="text-base text-cream-200/80 leading-relaxed max-w-[38ch]">
               Caring for Eastside landscapes since 2001. Family-owned,
               locally rooted, and proud of every property we maintain.
             </p>
@@ -40,7 +40,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-cream-200/70 hover:text-cream-50 transition-colors duration-200 cursor-pointer"
+                    className="text-base text-cream-200/85 hover:text-cream-50 transition-colors duration-200 cursor-pointer"
                   >
                     {link.label}
                   </a>
@@ -58,7 +58,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+12062265665"
-                  className="flex items-center gap-3 text-sm text-cream-200/70 hover:text-cream-50 transition-colors duration-200 cursor-pointer group"
+                  className="flex items-center gap-3 text-base font-semibold text-cream-200/90 hover:text-cream-50 transition-colors duration-200 cursor-pointer group"
                 >
                   <Phone
                     size={15}
@@ -69,7 +69,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <address className="flex items-start gap-3 text-sm text-cream-200/70 not-italic">
+                <address className="flex items-start gap-3 text-base text-cream-200/85 not-italic">
                   <MapPin
                     size={15}
                     className="text-forest-400 shrink-0 mt-0.5"
@@ -83,7 +83,7 @@ export default function Footer() {
                 </address>
               </li>
               <li className="pt-1">
-                <p className="text-xs text-cream-200/50 leading-relaxed">
+                <p className="text-sm text-cream-200/70 leading-relaxed">
                   Mon–Fri 9am–5pm
                   <br />
                   Sat by appointment · Sun closed

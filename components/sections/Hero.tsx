@@ -72,7 +72,7 @@ export default function Hero() {
 
           {/* Tagline */}
           <motion.p
-            className="text-base md:text-lg font-outfit font-light text-cream-100/75 leading-relaxed mb-10 max-w-[46ch]"
+            className="text-lg md:text-xl font-outfit font-light text-cream-100/90 leading-relaxed mb-10 max-w-[46ch]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, type: "spring", stiffness: 80, damping: 18 }}
@@ -91,13 +91,13 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-7 py-3.5 bg-gold-500 hover:bg-gold-400 text-forest-950 font-outfit font-semibold text-sm rounded transition-all duration-200 cursor-pointer active:scale-[0.98]"
+              className="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-400 text-forest-950 font-outfit font-semibold text-base rounded transition-all duration-200 cursor-pointer active:scale-[0.98]"
             >
               Get a Free Quote
             </a>
             <a
               href="#services"
-              className="inline-flex items-center justify-center px-7 py-3.5 border border-cream-200/40 hover:border-cream-200/70 text-cream-50 hover:bg-cream-50/8 font-outfit font-medium text-sm rounded transition-all duration-200 cursor-pointer"
+              className="inline-flex items-center justify-center px-8 py-4 border border-cream-200/50 hover:border-cream-200/80 text-cream-50 hover:bg-cream-50/10 font-outfit font-medium text-base rounded transition-all duration-200 cursor-pointer"
             >
               Our Services
             </a>
@@ -106,7 +106,7 @@ export default function Hero() {
           {/* Phone number */}
           <motion.a
             href="tel:+12062265665"
-            className="inline-flex items-center gap-2 mt-8 text-sm font-outfit text-cream-100/60 hover:text-cream-100 transition-colors duration-200 cursor-pointer"
+            className="inline-flex items-center gap-2 mt-8 text-base font-outfit text-cream-100/80 hover:text-cream-50 transition-colors duration-200 cursor-pointer"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}

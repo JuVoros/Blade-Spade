@@ -62,7 +62,8 @@ body {
   background-color: var(--color-cream-50);
   color: #1C1917;
   font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.75;
   overflow-x: hidden;
 }
 
@@ -77,11 +78,11 @@ body {
   }
 }
 
-/* ─── Focus ring ─── */
+/* ─── Focus ring — thick, high-contrast for keyboard/older users ─── */
 :focus-visible {
-  outline: 2px solid var(--color-forest-500);
-  outline-offset: 3px;
-  border-radius: 3px;
+  outline: 3px solid var(--color-forest-400);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 /* ─── Smooth link transitions ─── */

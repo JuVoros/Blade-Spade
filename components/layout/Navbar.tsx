@@ -70,7 +70,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm font-outfit font-medium tracking-wide text-cream-200/80 hover:text-cream-50 transition-colors duration-200 cursor-pointer"
+                  className="text-base font-outfit font-medium tracking-wide text-cream-200/90 hover:text-cream-50 transition-colors duration-200 cursor-pointer py-1"
                 >
                   {link.label}
                 </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <a
             href="tel:+12062265665"
-            className="hidden md:flex items-center gap-2 px-4 py-2 bg-gold-500 hover:bg-gold-400 text-forest-950 text-sm font-outfit font-semibold rounded transition-all duration-200 cursor-pointer active:scale-[0.98]"
+            className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-gold-500 hover:bg-gold-400 text-forest-950 text-base font-outfit font-semibold rounded transition-all duration-200 cursor-pointer active:scale-[0.98]"
             aria-label="Call us at (206) 226-5665"
           >
             <Phone size={15} weight="bold" aria-hidden="true" />

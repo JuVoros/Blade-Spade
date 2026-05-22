@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
                 <em className="italic text-forest-200">Proven over time.</em>
               </h2>
             </div>
-            <p className="text-base font-outfit text-cream-200/60 leading-relaxed max-w-[40ch] lg:ml-auto">
+            <p className="text-base font-outfit text-cream-200/80 leading-relaxed max-w-[40ch] lg:ml-auto">
               We&apos;re not the newest landscaping company on the Eastside —
               and that&apos;s exactly the point.
             </p>
@@ -91,7 +91,7 @@ export default function WhyChooseUs() {
                 </h3>
 
                 {/* Body — takes second row on mobile, third col on desktop */}
-                <p className="col-start-2 md:col-start-3 text-sm md:text-base font-outfit text-cream-200/55 leading-relaxed max-w-[44ch]">
+                <p className="col-start-2 md:col-start-3 text-base md:text-lg font-outfit text-cream-200/80 leading-relaxed max-w-[44ch]">
                   {value.body}
                 </p>
               </div>

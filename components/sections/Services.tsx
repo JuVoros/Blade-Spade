@@ -125,23 +125,23 @@ function ServiceCard({
           >
             {service.title}
           </h3>
-          <p className="text-sm md:text-base font-outfit text-stone-700 leading-relaxed mb-6 max-w-[44ch]">
+          <p className="text-base md:text-lg font-outfit text-stone-700 leading-relaxed mb-6 max-w-[44ch]">
             {service.description}
           </p>
 
           {/* Accordion toggle */}
           <button
             onClick={() => setOpen((v) => !v)}
-            className="flex items-center gap-2 text-sm font-outfit font-semibold text-forest-700 hover:text-forest-900 transition-colors duration-200 cursor-pointer w-fit"
+            className="flex items-center gap-3 px-5 py-3 border border-forest-600 text-forest-700 hover:bg-forest-700 hover:text-cream-50 font-outfit font-semibold text-base rounded transition-all duration-200 cursor-pointer w-fit"
             aria-expanded={open}
             aria-controls={`services-list-${service.id}`}
           >
             {open ? (
-              <Minus size={16} weight="bold" aria-hidden="true" />
+              <Minus size={18} weight="bold" aria-hidden="true" />
             ) : (
-              <Plus size={16} weight="bold" aria-hidden="true" />
+              <Plus size={18} weight="bold" aria-hidden="true" />
             )}
-            {open ? "Hide services" : "View all services"}
+            {open ? "Hide all services" : "View all services"}
           </button>
 
           <AnimatePresence initial={false}>
@@ -162,7 +162,7 @@ function ServiceCard({
                   {service.services.map((item) => (
                     <li
                       key={item}
-                      className="flex items-baseline gap-2 text-sm font-outfit text-stone-700"
+                      className="flex items-baseline gap-2 text-base font-outfit text-stone-700"
                     >
                       <span
                         className="w-1 h-1 rounded-full bg-forest-500 shrink-0 mt-[0.4em]"

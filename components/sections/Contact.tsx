@@ -59,8 +59,8 @@ export default function Contact() {
   };
 
   const inputBase =
-    "w-full px-4 py-3 bg-cream-50 border text-forest-900 font-outfit text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-forest-500/40 focus:border-forest-500 transition-colors duration-200 rounded-sm";
-  const labelBase = "block text-xs font-outfit font-semibold tracking-wide text-forest-700 mb-1.5";
+    "w-full px-4 py-4 bg-cream-50 border text-forest-900 font-outfit text-base placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-forest-500/50 focus:border-forest-500 transition-colors duration-200 rounded-sm";
+  const labelBase = "block text-sm font-outfit font-semibold tracking-wide text-forest-800 mb-2";
 
   return (
     <section
@@ -107,7 +107,7 @@ export default function Contact() {
                     </p>
                     <a
                       href="tel:+12062265665"
-                      className="text-lg font-outfit text-forest-900 hover:text-forest-600 transition-colors duration-200 cursor-pointer"
+                      className="text-xl font-outfit font-semibold text-forest-900 hover:text-forest-600 underline underline-offset-2 transition-colors duration-200 cursor-pointer"
                     >
                       (206) 226-5665
                     </a>
@@ -315,21 +315,22 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="w-full py-4 bg-forest-800 hover:bg-forest-700 disabled:bg-forest-800/50 text-cream-50 font-outfit font-semibold text-sm rounded transition-all duration-200 cursor-pointer active:scale-[0.99] disabled:cursor-not-allowed"
+                    className="w-full py-5 bg-forest-800 hover:bg-forest-700 disabled:bg-forest-800/50 text-cream-50 font-outfit font-semibold text-lg rounded transition-all duration-200 cursor-pointer active:scale-[0.99] disabled:cursor-not-allowed"
                     aria-disabled={status === "loading"}
                   >
                     {status === "loading" ? "Sending…" : "Send Message"}
                   </button>
 
-                  <p className="text-xs font-outfit text-stone-400 text-center">
-                    Or call us at{" "}
+                  <p className="text-base font-outfit text-stone-500 text-center">
+                    Prefer to call?{" "}
                     <a
                       href="tel:+12062265665"
-                      className="text-forest-600 hover:text-forest-800 cursor-pointer"
+                      className="text-forest-700 font-semibold hover:text-forest-900 underline underline-offset-2 cursor-pointer"
                     >
                       (206) 226-5665
-                    </a>{" "}
-                    · Mon–Fri 9am–5pm
+                    </a>
+                    <br />
+                    <span className="text-sm text-stone-400">Mon–Fri 9am–5pm</span>
                   </p>
                 </div>
               </form>
