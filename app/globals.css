@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────
+   BLADE & SPADE — Design System
+   Palette: Deep forest greens · Warm cream · Stone/tan · Gold
+   Typography: Cormorant Garamond (display) · Outfit (body/UI)
+   ───────────────────────────────────────────── */
+
+@theme inline {
+  /* ── Fonts ── */
+  --font-display: var(--font-cormorant);
+  --font-sans:    var(--font-outfit);
+
+  /* ── Forest Greens ── */
+  --color-forest-950: #0F1F10;
+  --color-forest-900: #1A3320;
+  --color-forest-800: #243D2C;
+  --color-forest-700: #2F5038;
+  --color-forest-600: #3A6344;
+  --color-forest-500: #4A7C59;
+  --color-forest-400: #6A9E77;
+  --color-forest-300: #8DBF9A;
+  --color-forest-200: #B8D9C0;
+  --color-forest-100: #DFF0E4;
+  --color-forest-50:  #F0F7F2;
+
+  /* ── Cream / Warm Whites ── */
+  --color-cream-50:  #FAF7F2;
+  --color-cream-100: #F5EFE2;
+  --color-cream-200: #EDE3CE;
+  --color-cream-300: #DDD0B6;
+  --color-cream-400: #C8B896;
+
+  /* ── Stone / Bark / Tan ── */
+  --color-stone-900: #2C2118;
+  --color-stone-800: #3D2E20;
+  --color-stone-700: #5A4330;
+  --color-stone-600: #7A5C40;
+  --color-stone-500: #9A7B58;
+  --color-stone-400: #B89A78;
+  --color-stone-300: #CEBA9A;
+  --color-stone-200: #E0D2BC;
+  --color-stone-100: #F2EBE0;
+
+  /* ── Gold (CTA) ── */
+  --color-gold-700: #8A6208;
+  --color-gold-600: #A67B0C;
+  --color-gold-500: #B8860B;
+  --color-gold-400: #D4A520;
+  --color-gold-300: #E8C050;
+  --color-gold-100: #FDF3D0;
+}
+
+/* ─── Base ─── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-cream-50);
+  color: #1C1917;
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ─── Reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─── Focus ring ─── */
+:focus-visible {
+  outline: 2px solid var(--color-forest-500);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ─── Smooth link transitions ─── */
+a {
+  transition: color 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ─── Lightbox scroll lock ─── */
+body.lightbox-open {
+  overflow: hidden;
+}
